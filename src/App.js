@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import './App.css';
   
 function App() {
 
@@ -22,22 +23,26 @@ function App() {
 
 
   return (
-     <div>
-          <form onSubmit={handleSearch}>
-              <input type = "text"
-              onChange={e => setQuery(e.target.value)}
-              value={query}/>
+    <div className="container">
+      <h1 className="title">Chuck Norris Jokes</h1>
+      <hr></hr>
 
+      <h6 className="categories">Categories</h6>
+      <button className="btn btn-link btn-md">Food</button>
+      <button className="btn btn-link btn-md">All Jokes</button>
 
-<button type = "submit"> Search </button>
-          </form>
+      <hr></hr>
 
-          {jokes.map(joke => {
-              return (
-                  <p> {joke.value} </p>
-              )
-          })}
-        </div>
+      <div className="card">
+        <div className="card-header"> Joke </div>
+
+          <div className = "card-body"> <p>Joke No. 1</p>
+          <footer class="blockquote-footer">Created on <cite title="date"> date  </cite></footer> </div>
+
+  
+      </div>
+    </div>
+    
       );
 }
 export default App;
