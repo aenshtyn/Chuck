@@ -2,7 +2,7 @@
 
 
 ### Live Site
-[Noriss]  (https://aenshtyn.github.io/Noriss/)
+[Noriss]  (https://aenshtyn.github.io/Chuck/)
 
 #### Built by
 
